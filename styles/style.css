@@ -27,12 +27,19 @@ button:hover {
     color: black;
 }
 
+.descriptions {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 /*--------------
    Header Style 
  ---------------*/
 
 header {
-    height: 160vh;
+    height: auto;
     background-color: rgba(255, 144, 14, 0.1);
     padding: 20px 35px 45px 35px;
 }
@@ -52,7 +59,7 @@ nav ul {
 }
 
 nav ul li {
-    padding-left: 75px;
+    padding-left: 95px;
     cursor: pointer;
 }
 
@@ -63,30 +70,160 @@ nav ul li {
     cursor: pointer;
 }
 
-.header-div{
+.header-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
     text-align: center;
     width: 50%;
-    margin: 100px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 
-.header-h2{
+.header-h2 {
     font-weight: 700;
-font-size: 64px;
-color: #131313;
+    font-size: 64px;
+    color: #131313;
 }
 
-.header-description{
+
+
+.header-img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+/*----------------- 
+   Section-1 Style 
+  ----------------*/
+
+.section-1 {
+    display: flex;
+    gap: 70px;
+    margin: 85px 100px 130px 100px;
+    align-items: center;
+}
+
+.section-1-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.section-1-title {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.quick-list {
     color: #727272;
-    font-weight: 400;
-font-size: 16px;
-margin-top: 10px;
 }
 
-.header-img{
-margin-top: 50px;
+.of-our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/*----------------- 
+   Section-2 Style 
+  ----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------
+   Mobile Responsive
+----------------------*/
+
+@media screen and (max-width:576px) {
+
+    /* ---Header Responsive--- */
+
+    .header-h2 {
+        font-size: 54px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    .header-div {
+        margin: 20px auto;
+    }
+
+    .header-img {
+        margin-top: 20px;
+    }
+
+    /* ---------------------
+       Section-1 Responsive
+    ------------------------ */
+
+    .section-1 {
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .section-1-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ---------------------
+       Section-2 Responsive
+    ------------------------ */
+
+
+
+
+
+
+
+
 }
