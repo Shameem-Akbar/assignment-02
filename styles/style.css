@@ -136,19 +136,126 @@ nav ul li {
    Section-2 Style 
   ----------------*/
 
+.section-2 {
+    display: flex;
+    padding: 0 35px;
+    justify-content: space-between;
+}
 
+.section-2-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 530px;
+    margin-top: 80px;
 
+}
 
+.feature {
+    padding: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
 
+.feature-h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
 
+}
 
+.section-2-title {
+    color: #131313;
+    font-weight: 900;
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
 
+.section-2-right {
+    position: relative;
+    width: 800px;
+    height: 1059px;
+}
 
+.section-2-image {
+    position: absolute;
+    right: 0;
+}
 
+.big-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 65px;
+}
 
+.big-button-span {
+    font-weight: 500;
+    font-size: 25px;
+}
 
+/*----------------- 
+   Section-3 Style 
+  ----------------*/
 
+.section-3{
+    margin: 100px 35px 0 35px;
+}
 
+.section-3 h3{
+    font-weight: 700;
+font-size: 45px;
+color: #131313;
+}
+
+.fact-boxes{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.fact-box{
+    border: 1px solid #FF900E;
+border-radius: 8px;
+transition: transform 2s ease-in-out ;
+width: 180px;
+height: 160px;
+padding: 30px;
+
+}
+
+.fact-box:hover{
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px 0 grey;
+}
+
+.fact-box .number{
+    font-weight: 600;
+font-size: 45px;
+color: #424242;
+margin: 10px 0;
+}
+
+.fact-info{
+    font-weight: 600;
+font-size: 20px;
+color: #727272;
+}
+
+/*----------------- 
+   Section-4 Style 
+  ----------------*/
 
 
 
@@ -174,7 +281,9 @@ nav ul li {
 
 @media screen and (max-width:576px) {
 
-    /* ---Header Responsive--- */
+    /*-----------------
+      Header Responsive
+    --------------------*/
 
     .header-h2 {
         font-size: 54px;
@@ -208,7 +317,7 @@ nav ul li {
 
     .section-1 {
         flex-direction: column;
-        margin: 50px;
+        margin: 50px 50px 0 50px;
     }
 
     .section-1-images {
@@ -218,6 +327,68 @@ nav ul li {
     /* ---------------------
        Section-2 Responsive
     ------------------------ */
+
+    .section-2 {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .section-2-left {
+        width: auto;
+    }
+
+    .section-2-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-2-image {
+        position: relative;
+
+    }
+
+    .section-2-image img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .big-button {
+        position: relative;
+        width: 250px;
+        height: 120px;
+        font-weight: 600;
+        font-size: 45px;
+        margin: auto;
+    }
+
+    /* ---------------------
+       Section-3 Responsive
+    ------------------------ */
+
+    .section-3{
+        margin-top: 50px;
+    }
+    .fact-boxes{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+        /* ---------------------
+       Section-4 Responsive
+    ------------------------ */
+
+
+
+
+
+
+
+
 
 
 
