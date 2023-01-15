@@ -212,10 +212,11 @@ nav ul li {
     margin: 100px 35px 0 35px;
 }
 
-.section-3 h3{
+.section-3 h3, .section-4 h3, .section-5 h3 {
     font-weight: 700;
 font-size: 45px;
 color: #131313;
+margin-bottom: 24px;
 }
 
 .fact-boxes{
@@ -257,13 +258,98 @@ color: #727272;
    Section-4 Style 
   ----------------*/
 
+.section-4{
+    margin-top: 100px;
+    padding: 0 35px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
 
+.sponsors{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsor img{
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+    height: 100%;
+    transition: height .5s ease-in-out;
+}
 
+.sponsor img:hover{
+    mix-blend-mode: normal;
+    height: 110%;
+}
 
+/*----------------- 
+   Section-5 Style 
+  ----------------*/
 
+.section-5{
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 35px;
+}
 
+.feedback{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    height: 360px;
+}
 
+.hero-image img{
+    width: 600px;
+    height: 360px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
 
+.phero-feedback{
+    /* margin-top: 35px; */
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 grey;
+    border-radius: 8px;
+}
+
+.phero-feedback:hover{
+background-color: rgb(235, 217, 217);
+color: rgb(26, 71, 0);
+}
+
+.phero-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.phero-comment{
+    margin-bottom: 30px; 
+    color: #424242; 
+    font-size: large;
+}
+
+.phero-ceo{
+    font-weight: bold;
+    font-size: large;
+}
+
+.excellent{
+margin-top: 30px;
+}
+
+.stars{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.star{
+    color: rgb(255, 192, 4);
+}
 
 
 
@@ -378,19 +464,29 @@ color: #727272;
         margin-top: 30px;
     }
 
-        /* ---------------------
+    /* ---------------------
        Section-4 Responsive
     ------------------------ */
 
+    .sponsors{
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    /* ---------------------
+       Section-5 Responsive
+    ------------------------ */
 
+    .feedback{
+        flex-direction: column;
+    }
+    .hero-image img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 
-
-
-
-
-
-
+    
 
 
 
