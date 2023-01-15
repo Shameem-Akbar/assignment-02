@@ -208,76 +208,79 @@ nav ul li {
    Section-3 Style 
   ----------------*/
 
-.section-3{
+.section-3 {
     margin: 100px 35px 0 35px;
 }
 
-.section-3 h3, .section-4 h3, .section-5 h3 {
+.section-3 h3,
+.section-4 h3,
+.section-5 h3 {
     font-weight: 700;
-font-size: 45px;
-color: #131313;
-margin-bottom: 24px;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
 }
 
-.fact-boxes{
+.fact-boxes {
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
 
-.fact-box{
+.fact-box {
     border: 1px solid #FF900E;
-border-radius: 8px;
-transition: transform 2s ease-in-out ;
-width: 180px;
-height: 160px;
-padding: 30px;
+    border-radius: 8px;
+    transition: transform 2s ease-in-out;
+    width: 180px;
+    height: 160px;
+    padding: 30px;
 
 }
 
-.fact-box:hover{
+.fact-box:hover {
     transform: rotate(360deg);
     box-shadow: 0 0 20px 0 grey;
 }
 
-.fact-box .number{
+.fact-box .number {
     font-weight: 600;
-font-size: 45px;
-color: #424242;
-margin: 10px 0;
+    font-size: 45px;
+    color: #424242;
+    margin: 10px 0;
 }
 
-.fact-info{
+.fact-info {
     font-weight: 600;
-font-size: 20px;
-color: #727272;
+    font-size: 20px;
+    color: #727272;
 }
 
 /*----------------- 
    Section-4 Style 
   ----------------*/
 
-.section-4{
+.section-4 {
     margin-top: 100px;
     padding: 0 35px;
     text-align: center;
     background-color: #FFFFFF;
 }
 
-.sponsors{
+.sponsors {
     margin: 40px;
     display: flex;
     justify-content: space-between;
 }
-.sponsor img{
+
+.sponsor img {
     mix-blend-mode: luminosity;
     cursor: pointer;
     height: 100%;
     transition: height .5s ease-in-out;
 }
 
-.sponsor img:hover{
+.sponsor img:hover {
     mix-blend-mode: normal;
     height: 110%;
 }
@@ -286,80 +289,94 @@ color: #727272;
    Section-5 Style 
   ----------------*/
 
-.section-5{
+.section-5 {
     text-align: center;
     margin-top: 80px;
     padding: 0 35px;
 }
 
-.feedback{
+.feedback {
     display: flex;
     gap: 20px;
     margin-top: 40px;
-    justify-content: space-evenly;
-    height: 360px;
 }
 
-.hero-image img{
+.hero-image img {
     width: 600px;
     height: 360px;
     border-radius: 10px;
     margin-left: 30px;
 }
 
-.phero-feedback{
-    /* margin-top: 35px; */
-    padding: 30px;
+.phero-feedback {
+    padding: 30px 30px 30px 30px;
     text-align: left;
     box-shadow: 0 0 20px 0 grey;
     border-radius: 8px;
 }
 
-.phero-feedback:hover{
-background-color: rgb(235, 217, 217);
-color: rgb(26, 71, 0);
+.phero-feedback:hover {
+    background-color: rgb(235, 217, 217);
+    color: rgb(26, 71, 0);
 }
 
-.phero-title{
+.phero-title {
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
-.phero-comment{
-    margin-bottom: 30px; 
-    color: #424242; 
+.phero-comment {
+    margin-bottom: 18px;
+    color: #424242;
     font-size: large;
 }
 
-.phero-ceo{
+.phero-ceo {
     font-weight: bold;
     font-size: large;
 }
 
-.excellent{
-margin-top: 30px;
+.excellent {
+    margin-top: 20px;
 }
 
-.stars{
+.stars {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-.star{
+.star {
     color: rgb(255, 192, 4);
+    animation: rotate-star 7s infinite linear;
 }
 
 
+@keyframes rotate-star {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+/*--------------
+   Footer Style 
+ ---------------*/
 
-
-
-
-
-
+footer {
+    display: flex;
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 100px;
+    margin: 40px 30px 0 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /*--------------------
    Mobile Responsive
@@ -454,10 +471,11 @@ margin-top: 30px;
        Section-3 Responsive
     ------------------------ */
 
-    .section-3{
+    .section-3 {
         margin-top: 50px;
     }
-    .fact-boxes{
+
+    .fact-boxes {
         flex-direction: column;
         align-items: center;
         gap: 15px;
@@ -468,7 +486,7 @@ margin-top: 30px;
        Section-4 Responsive
     ------------------------ */
 
-    .sponsors{
+    .sponsors {
         flex-direction: column;
         gap: 15px;
     }
@@ -477,20 +495,14 @@ margin-top: 30px;
        Section-5 Responsive
     ------------------------ */
 
-    .feedback{
+    .feedback {
         flex-direction: column;
     }
-    .hero-image img{
+
+    .hero-image img {
         width: 100%;
         height: auto;
         margin: 0;
     }
-
-    
-
-
-
-
-
 
 }
