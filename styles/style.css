@@ -261,7 +261,7 @@ nav ul li {
   ----------------*/
 
 .section-4 {
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 0 35px;
     text-align: center;
     background-color: #FFFFFF;
@@ -362,6 +362,28 @@ nav ul li {
         transform: rotate(360deg);
     }
 }
+
+.circles{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle-current{
+    color: #424242;
+    cursor: pointer;
+}
+.circle-next{
+    color: #dd9292;
+    cursor: pointer;
+}
+
+.circle-next:hover{
+    color: #424242;
+}
+
+
 
 /*--------------
    Footer Style 
